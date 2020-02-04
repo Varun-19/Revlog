@@ -6,7 +6,7 @@ const initialState = {
             type : 'text',
             config : {
                 type : 'text',
-                placeholder : 'username'
+                placeholder : 'Username'
             },
             value : ''
         },
@@ -14,7 +14,7 @@ const initialState = {
             type : 'password',
             config : {
                 type : 'password',
-                placeholder : 'password'
+                placeholder : 'Password'
             },
             value : ''
         }

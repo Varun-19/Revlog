@@ -6,15 +6,16 @@ const input = ( props ) => {
     let inputElement = null;
 
     switch ( props.elementType ) {
-        case ( 'input' ):
+        case ( 'text' ):
             inputElement = <input
+                className={styles.input}
                 {...props.elementConfig}
                 value={props.value}
                 onChange={props.changed} />;
             break;
         case ( 'password' ):
             inputElement = <input
-                
+                className={styles.input}
                 {...props.elementConfig}
                 value={props.value}
                 onChange={props.changed} />;
@@ -35,14 +36,13 @@ const input = ( props ) => {
         //     break;
         default:
             inputElement = <input
-                
                 {...props.elementConfig}
                 value={props.value}
                 onChange={props.changed} />;
     }
 
     return (
-        <div className={styles.Input}>
+        <div>
             {inputElement}
         </div>
     );

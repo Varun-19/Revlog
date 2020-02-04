@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import * as action from '../../Store/Actions/Login';
 import * as styles from './Login.module.css';
+import logo from '../../assets/logo/Logo.svg'
 import Input from '../Input/Input';
 
 class Login extends React.Component {    
@@ -16,7 +17,13 @@ class Login extends React.Component {
             })
         }
         return(
-            <div className={styles.loginContainer}>
+            <div className={styles.loginContainer}> 
+                <div className={styles.header}>
+                    <img src={logo} alt='Logo'/>
+                    <h1>RevLog</h1>    
+                </div>
+                               
+                
                 <form  className={styles.form} onSubmit={this.formHandler}>
                     {formObjectArray.map(formElements =>              
                         <Input  key={formElements.id}
@@ -25,7 +32,7 @@ class Login extends React.Component {
                                 value={formElements.config.value}
                                 changed={(event) => {this.props.onChange(event,formElements.id)}} />
                     )}
-                    <button>Submit</button>
+                    <button>Login</button>
                 </form>  
             </div>
         )

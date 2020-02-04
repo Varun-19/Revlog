@@ -1,9 +1,42 @@
 .loginContainer{
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.loginContainer button {
+    width: 30rem;
+    border: none;
+    background-color: #FA6332;
+    color: white;
+    height: 5rem;
+    border-radius: .7rem;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
 
+.header {
+ display: flex;
+ align-items: center;
+ margin: 10rem 0 5rem 0;
+}
+
+.header img {
+    width: 7rem;
+    height: 12rem;
+    margin-right: 3rem;
+    margin-bottom: 2.2rem;
+}
+
+.loginContainer h1 {
+    color: #FA6332;
+    font: 900 10rem 'Source Sans Pro', sans-serif;
+    letter-spacing: 2px;
+}
