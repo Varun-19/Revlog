@@ -2,12 +2,18 @@ import React from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
 
+
 import * as action from '../../Store/Actions/Login';
 import * as styles from './Login.module.css';
 import logo from '../../assets/logo/Logo.svg'
 import Input from '../Input/Input';
 
-class Login extends React.Component {    
+class Login extends React.Component {  
+    formHandler = (e) => {
+        e.preventDefault();
+        const { history } = this.props;
+        history.push('/revlog');
+    }  
     render() {
         let formObjectArray = [];
         for(let key in this.props.formElements.formElements) {
@@ -16,6 +22,7 @@ class Login extends React.Component {
                 config : this.props.formElements.formElements[key]
             })
         }
+
         return(
             <div className={styles.loginContainer}> 
                 <div className={styles.header}>
@@ -23,7 +30,6 @@ class Login extends React.Component {
                     <h1>RevLog</h1>    
                 </div>
                                
-                
                 <form  className={styles.form} onSubmit={this.formHandler}>
                     {formObjectArray.map(formElements =>              
                         <Input  key={formElements.id}
