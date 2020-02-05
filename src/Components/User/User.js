@@ -6,11 +6,10 @@ import { Route } from 'react-router-dom';
 class User extends React.Component {
     render() {
         return(
-            <React.fragment>
+            <React.Fragment>
                 <Navbar />
                 <h1>Users Page</h1>
-                <Route path='/users' component={User}/>
-            </React.fragment>
+            </React.Fragment>
         )
     }
 }

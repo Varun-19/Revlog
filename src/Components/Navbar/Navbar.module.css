@@ -1,13 +1,17 @@
-.mainHeader {
-    position: absolute;
-    top: 0;
-    left: 0;
+.mainHeader{
+    width: 10rem;
     background: #FA6332;
     height: 100vh; 
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}  
+
 .logo {
-    margin: 2rem;
+    padding: 2rem;
     text-align: center;
 }
 

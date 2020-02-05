@@ -9,8 +9,9 @@ import invoiceIcon from '../../assets/icons/invoice.svg';
 import * as styles from './Navbar.module.css';
 
 const navBar = () => {
+    const headerStyle = `${styles.mainHeader} ${styles.clearfix}`
     return (
-        <header className={styles.mainHeader}>
+        <header className={headerStyle}>
             <div className={styles.logo}>
                 <img src={LogoWhite} alt='Logo' />
             </div>
@@ -36,10 +37,12 @@ const navBar = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/users'>
-                            <img src={teamIcon} alt='User' />
-                            <span className={styles.display}>REVLOG</span>
-                        </NavLink>
+                        <Link to='/users'  activeClassName={styles.active}>
+                            <div>
+                                <img src={teamIcon} alt='User' />
+                                <span className={styles.display}>REVLOG</span>
+                            </div>
+                        </Link>
                     </li>
                     <li>
                         <NavLink to='/invoice'>
