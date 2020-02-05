@@ -10,6 +10,7 @@ html {
 
 
 body {
+  overflow-x: hidden;
   margin: 0;
   line-height: 1.7;
   box-sizing: border-box;

@@ -2,15 +2,15 @@ import React from 'react';
 
 import NavBar from '../Navbar/Navbar';
 
-class Return extends React.Component {
+class Invoice extends React.Component {
     render() {
         return(
             <div>
                 <NavBar/>
-                <h1>Returns Page</h1>
+                <h1>Invoice Page</h1>
             </div>
         )
     }
 }
 
-export default Return;
+export default Invoice;

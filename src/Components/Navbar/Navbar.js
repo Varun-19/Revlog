@@ -12,42 +12,48 @@ const navBar = () => {
     const headerStyle = `${styles.mainHeader} ${styles.clearfix}`
     return (
         <header className={headerStyle}>
-            <div className={styles.logo}>
-                <img src={LogoWhite} alt='Logo' />
-            </div>
             <nav className={styles.nav}>
+                <div className={styles.logo}>
+                    <img src={LogoWhite} alt='Logo' />
+                </div>
                 <ul>
                     <li>
-                        <NavLink to='/returns'>
-                            <span className={styles.rev}>RL</span>
-                        </NavLink>
+                        <div className={styles.revContainer}>
+                            <NavLink to='/revlog'>
+                                <span className={styles.rev}>RL</span>
+                            </NavLink>
+                        </div>
                     </li>
                     <li>
-                        <NavLink to='/revlog' activeClassName={styles.active}>
-                            <div>
+                        <NavLink to='/returns' activeClassName={styles.active}>
+                            <div className={styles.circle}>
                                 <img src={returnIcon} alt='RevLog' />
-                                <span className={styles.display}>REVLOG</span>
                             </div>
+                            <span className={styles.display}>Returns</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/products'>
-                            <img src={trolleyIcon} alt='RevLog' />
-                            <span className={styles.display}>REVLOG</span>
+                        <NavLink to='/products' activeClassName={styles.active}>
+                            <div className={styles.circle}>
+                                <img src={trolleyIcon} alt='RevLog' />
+                            </div>
+                            <span className={styles.display}>Products</span>
                         </NavLink>
                     </li>
                     <li>
-                        <Link to='/users'  activeClassName={styles.active}>
-                            <div>
+                        <NavLink to='/users'  activeClassName={styles.active}>
+                            <div className={styles.circle}>
                                 <img src={teamIcon} alt='User' />
-                                <span className={styles.display}>REVLOG</span>
                             </div>
-                        </Link>
+                            <span className={styles.display}>Users</span>
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/invoice'>
-                            <img src={invoiceIcon} alt='RevLog' />
-                            <span className={styles.display}>REVLOG</span>
+                        <NavLink to='/invoice' activeClassName={styles.active}>
+                            <div className={styles.circle}>
+                                <img src={invoiceIcon} alt='RevLog' />
+                            </div>
+                            <span className={styles.display}>Invoice</span>
                         </NavLink>
                     </li>
                 </ul>
