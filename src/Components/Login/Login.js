@@ -16,10 +16,10 @@ class Login extends React.Component {
     }  
     render() {
         let formObjectArray = [];
-        for(let key in this.props.formElements.formElements) {
+        for(let key in this.props.login.formElements) {
             formObjectArray.push({
                 id : key,
-                config : this.props.formElements.formElements[key]
+                config : this.props.login.formElements[key]
             })
         }
 
@@ -48,7 +48,7 @@ class Login extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        formElements : state.formElements
+        login : state.login
     }
 }
 

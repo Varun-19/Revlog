@@ -1,14 +1,15 @@
 import React from 'react';
 
 import NavBar from '../Navbar/Navbar';
+import Header from '../Header/Header';
 
 class Product extends React.Component {
     render() {
         return(
-        <div>
+        <section>
             <NavBar />
-            <h1>Products Page</h1>
-        </div>
+            <Header title='Products' />
+        </section>
         )
     }
 }

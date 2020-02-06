@@ -6,9 +6,9 @@ import Navbar from '../Navbar/Navbar';
 class RevLog extends React.Component {
     render() {
         return (
-            <div className={styles.revlog}>
+            <section>
                 <Navbar/>
-            </div>
+            </section>
         )
     }
 }

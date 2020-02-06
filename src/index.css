@@ -23,3 +23,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+section {
+  display: flex;
+  background: linear-gradient(to bottom,#272262 20%,white 20%);
+}

@@ -5,10 +5,10 @@ import NavBar from '../Navbar/Navbar';
 class Return extends React.Component {
     render() {
         return(
-            <div>
+            <section>
                 <NavBar/>
-                <h1>Returns Page</h1>
-            </div>
+                
+            </section>
         )
     }
 }

@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import formElements from './Store/Reducers/FormElements';
+import loginReducer from './Store/Reducers/Login';
+import headerReducer from './Store/Reducers/Header';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
-    formElements : formElements
+    login : loginReducer,
+    header : headerReducer
 })
 const store = createStore(rootReducer)
 
