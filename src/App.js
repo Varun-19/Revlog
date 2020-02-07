@@ -7,6 +7,10 @@ import RevLog from './Components/RevLog/RevLog';
 import Product from './Components/Product/Product';
 import Invoice from './Components/Invoice/Invoice';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons';
+
+library.add(faChevronLeft, faChevronRight)
 
 function App() {
   return (

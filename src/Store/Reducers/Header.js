@@ -35,7 +35,6 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch(action.type) {
         case actionTypes.onSelect : 
-            console.log(state);
             return state;
         default : return state;
     }

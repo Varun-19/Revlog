@@ -28,3 +28,8 @@ section {
   display: flex;
   background: linear-gradient(to bottom,#272262 20%,white 20%);
 }
+
+.component {
+  display: flex;
+  flex-direction: column;
+}

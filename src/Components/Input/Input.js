@@ -27,7 +27,6 @@ const input = ( props ) => {
                     value={props.value}
                     onChange={props.changed}>
                     {props.elementConfig.options.map(option => (
-                        console.log(option),
                         <option key={option.value} value={option.value}>
                             {option.display}
                         </option>

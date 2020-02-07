@@ -16,7 +16,6 @@ class Header extends React.Component {
                 config : this.props.header.headerElements[key]
             })
         }
-        console.log(headerObjectArray);
         return(
             <div className={styles.headerTop}>
                 <h3>{this.props.title}</h3>
