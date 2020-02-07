@@ -5,10 +5,10 @@ import NavBar from '../Navbar/Navbar';
 class Invoice extends React.Component {
     render() {
         return(
-            <div>
+            <section>
                 <NavBar/>
                 <h1>Invoice Page</h1>
-            </div>
+            </section>
         )
     }
 }

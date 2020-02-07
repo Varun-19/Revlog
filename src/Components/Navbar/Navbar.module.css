@@ -5,15 +5,31 @@
         height: 100%;
         z-index: 1;
         background: #FA6332;
-        transition: all 400ms;       
+        transition: all 700ms;       
 }
 
+<<<<<<< HEAD
+=======
+.mainHeader:hover {
+    width: 28rem;
+    transition: all .4s ease-out;
+}
+
+>>>>>>> e8c92cdbacb72bb8b2b813658ad4ef9a1aa45188
 .display {
     display: none;
+    font-size: 1.6rem;
+    padding-left: 1.5rem;
 }
 
 .mainHeader:hover .display{
     display: inline;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-out;
 }
 
 .nav{   
@@ -53,7 +69,6 @@
 .nav li {
     margin: 2rem 2.5rem 1rem 2.5rem;
     list-style: none;
-    text-align: center;
 }
 
 .nav li:first-of-type {
@@ -80,6 +95,7 @@
 .active .circle{
     background: rgba(255,255,255,0.3);
     border: 1px solid white;
+    
 }
 
 .nav img {
