@@ -29,7 +29,6 @@ const navBar = () => {
                             <div className={styles.circle}>
                                 <img src={returnIcon} alt='RevLog' />
                             </div>
-                            <span className={styles.display}>Returns</span>
                         </NavLink>
                     </li>
                     <li>
@@ -37,7 +36,6 @@ const navBar = () => {
                             <div className={styles.circle}>
                                 <img src={trolleyIcon} alt='RevLog' />
                             </div>
-                            <span className={styles.display}>Products</span>
                         </NavLink>
                     </li>
                     <li>
@@ -45,7 +43,6 @@ const navBar = () => {
                             <div className={styles.circle}>
                                 <img src={teamIcon} alt='User' />
                             </div>
-                            <span className={styles.display}>Users</span>
                         </NavLink>
                     </li>
                     <li>
@@ -53,7 +50,6 @@ const navBar = () => {
                             <div className={styles.circle}>
                                 <img src={invoiceIcon} alt='RevLog' />
                             </div>
-                            <span className={styles.display}>Invoice</span>
                         </NavLink>
                     </li>
                 </ul>

@@ -7,7 +7,6 @@ class Return extends React.Component {
         return(
             <div>
                 <NavBar/>
-                <h1>Returns Page</h1>
             </div>
         )
     }
