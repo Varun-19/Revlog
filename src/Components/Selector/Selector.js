@@ -85,7 +85,6 @@ class Selector extends React.Component {
               ...styles,
               color: 'white',
               fontSize : '1.4rem',
-              paddingLeft : '10rem'
             })
           }
 
