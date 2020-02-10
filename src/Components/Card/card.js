@@ -56,18 +56,23 @@ class card extends React.Component {
     const leftButton = styles.button + " " + styles.left;
     const rightButton = styles.button + " " + styles.right;
     let icons = null;
+    let data = null;
     switch(this.props.title) {
       case 'returns' : 
         icons = [flag, hourglass, refresh, choose];
+        data = ['Open','Pending','Reassigned','Completed'];
         break;
       case 'product' :
         icons = [grinder, woodCutting, electroScrew, hammerDrill];
+        data = ['Metalling','Wooding','DIY','Construction'];
         break;
       case 'user' : 
         icons = [worker, man, truck, workTeam];
+        data = ['Engineers','Executive','Logistics','Vendor'];
         break;
       default : 
         icons = [flag, hourglass, refresh, choose];
+        data = ['Open','Pending','Reassigned','Completed'];
     }
     return(
       <div className={styles.card}>
@@ -76,35 +81,47 @@ class card extends React.Component {
         </button>
         <div className={styles.center} id="content">
             <div className={styles.internal}>
+            <div className={styles.alignment}>
               <div className={`${styles.circle} ${styles.colorDark}`}>
                   <img src={icons[0]} alt='' />
               </div>
-              <div>
-
+              <div className={styles.data}>
+                <h2>25</h2>
+                <h3>{data[0]}</h3>
+              </div>
               </div>
             </div>
             <div className={styles.internal}>
+              <div className={styles.alignment}>
               <div className={`${styles.circle} ${styles.colorOrange}`}>
               <img src={icons[1]} alt='' />
               </div>
-              <div>
-                
+              <div className={styles.data}>
+                <h2>325</h2>
+                <h3>{data[1]}</h3>
+              </div>
               </div>
             </div>
             <div className={styles.internal}>
+            <div className={styles.alignment}>
             <div className={`${styles.circle} ${styles.colorBlue}`}>
-            <img src={icons[2]} alt='' />
+                <img src={icons[2]} alt='' />
             </div>
-            <div>
-
+            <div className={styles.data}>
+                <h2>159</h2>
+                <h3>{data[2]}</h3>
+            </div>
             </div>
             </div>
             <div className={styles.internal}>
+            <div className={styles.alignment}>
             <div className={`${styles.circle} ${styles.colorGreen}`}>
                 <img src={icons[3]} alt='' />
             </div>
-            <div>
-
+            <div className={styles.data}>
+                <h2>250</h2>
+                <h3>{data[3]}</h3>
+            </div>
             </div>
             </div>
         </div>

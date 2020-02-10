@@ -67,7 +67,7 @@ class Selector extends React.Component {
             multiValue: (styles,state) => ({
               ...styles,
               backgroundColor : '#FA6332',
-              fontSize : '1rem',
+              fontSize : '1.1rem',
               color: 'white'
             }),
             multiValueLabel : (styles,state) => ({
@@ -84,7 +84,7 @@ class Selector extends React.Component {
             placeholder : (styles,state) => ({
               ...styles,
               color: 'white',
-              fontSize : '1.3rem',
+              fontSize : '1.4rem',
               paddingLeft : '10rem'
             })
           }

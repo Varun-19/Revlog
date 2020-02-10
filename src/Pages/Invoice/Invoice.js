@@ -1,22 +1,21 @@
 import React from 'react';
 
-import Navbar from '../Navbar/Navbar';
-import { Route } from 'react-router-dom';
+import NavBar from '../Navbar/Navbar';
 import Header from '../Header/Header';
 import Card from '../Card/card';
 
-class User extends React.Component {
+class Invoice extends React.Component {
     render() {
         return(
             <section>
-                <Navbar />
+                <NavBar/>
                 <div className='component'>
-                <Header title="User" />
-                <Card />
+                <Header title="Invoice" />
+                <Card title='product'/>
                 </div>
             </section>
         )
     }
 }
 
-export default User;
+export default Invoice;

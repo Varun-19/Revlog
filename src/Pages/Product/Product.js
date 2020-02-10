@@ -11,7 +11,7 @@ class Product extends React.Component {
             <NavBar />
             <div className='component'>
                 <Header title='Products' />
-                <Card />
+                <Card title='product'/>
             </div>
         </section>
         )

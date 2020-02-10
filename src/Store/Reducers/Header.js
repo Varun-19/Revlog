@@ -2,7 +2,7 @@ import * as actionTypes from '../Actions/ActionTypes';
 
 const initialState = {
     headerElements : {
-        zone : {
+        Zone : {
             options : [
                 { value: 'all', label: 'All' },
                 { value: 'north', label: 'North' },
@@ -12,7 +12,7 @@ const initialState = {
                 ],
             value : ''
         },
-        priority : {
+        Priority : {
            options : [
                     { value: 'all', label: 'All' },
                     { value: 'p3', label: 'P3' },
