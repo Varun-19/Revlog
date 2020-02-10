@@ -3,30 +3,22 @@ import * as actionTypes from '../Actions/ActionTypes';
 const initialState = {
     headerElements : {
         zone : {
-            type : 'select',
-            config : {
-                options : [
-                    {value : 'zone', display: 'Zone'},
-                    {value : 'all', display: 'All'},
-                    {value : 'north', display: 'North'},
-                    {value : 'south', display: 'South'},
-                    {value : 'east', display: 'East'},
-                    {value : 'west', display: 'west'}
-                ]
-            },
+            options : [
+                { value: 'all', label: 'All' },
+                { value: 'north', label: 'North' },
+                { value: 'south', label: 'South' },
+                { value: 'east', label: 'East' },
+                { value: 'west', label: 'West' }
+                ],
             value : ''
         },
         priority : {
-            type : 'select',
-            config : {
-                options : [
-                    {value : 'priority', display: 'Priority'},
-                    {value : 'all', display: 'All'},
-                    {value : 'p3', display: 'P3'},
-                    {value : 'p2', display: 'P2'},
-                    {value : 'p1', display: 'P1'}
-                ]
-            },
+           options : [
+                    { value: 'all', label: 'All' },
+                    { value: 'p3', label: 'P3' },
+                    { value: 'p2', label: 'P2' },
+                    { value: 'p1', label: 'P1' },
+                ],
             value: ''
         }
     }

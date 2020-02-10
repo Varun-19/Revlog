@@ -1,9 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import * as styles from './Header.module.css';
 import * as action from '../../Store/Actions/Login';
-import Input from '../Input/Input';
-import { connect } from 'react-redux';
+import Selector from '../Selector/Selector';
 
 class Header extends React.Component {
     
@@ -15,17 +15,19 @@ class Header extends React.Component {
                 id : key,
                 config : this.props.header.headerElements[key]
             })
-        }
+        }     
+
         return(
             <div className={styles.headerTop}>
-                <h3>{this.props.title}</h3>
-                {headerObjectArray.map(headerElements =>              
-                        <Input  key={headerElements.id}
-                                elementType={headerElements.config.type}
-                                elementConfig={headerElements.config.config}
-                                value={headerElements.config.value}
-                                changed={(event) => {this.props.onChange(event,headerElements.id)}} />
-                    )}
+                <div className={styles.title}>
+                    <h3>{this.props.title}</h3>
+                </div>
+                {headerObjectArray.map( el => {
+                    return(
+                        <Selector key={el.id} id={el.id} options={el.config.options}/>
+                    )
+                })}
+                
             </div>
         )
     }
