@@ -32,8 +32,8 @@ class Upload extends Component {
       promises.push(this.sendRequest(file));
     });
     try {
-      await Promise.all(promises);
-
+      let res = await Promise.all(promises);
+      console.log(res);
       this.setState({ successfullUploaded: true, uploading: false });
     } catch (e) {
       // Not Production ready! Do some error handling here instead...
@@ -73,7 +73,7 @@ class Upload extends Component {
       const formData = new FormData();
       formData.append("file", file, file.name);
 
-      req.open("POST", "http://localhost:8000/upload");
+      req.open("POST", 'https://testformdata.free.beeceptor.com')
       req.send(formData);
     });
   }
