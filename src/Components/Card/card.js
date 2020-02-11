@@ -46,10 +46,6 @@ t--;
 return -c/2 * (t*(t-2) - 1) + b;
 };
 
-const returns = [flag, hourglass, refresh, choose];
-const Product = [grinder, woodCutting, electroScrew, hammerDrill];
-const user = [worker, man, truck, workTeam];
-
 class card extends React.Component {
    
   render () {

@@ -1,0 +1,41 @@
+.Dropzone {
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+    border: 2px dashed rgb(187, 186, 186);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+.circle {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 2px solid #fA6332;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+  .Highlight {
+    background-color: rgb(188, 185, 236);
+  }
+  
+  .Icon {
+    width: 5rem;
+    height: auto;
+  }
+  
+  .FileInput {
+    display: none;
+  }
+  
+  .span {
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+  }

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Login from './Components/Login/Login';
-import Return from './Components/Return/Return';
-import User from './Components/User/User';
-import RevLog from './Components/RevLog/RevLog';
-import Product from './Components/Product/Product';
-import Invoice from './Components/Invoice/Invoice';
+import Login from './Pages/Login/Login'
+import Return from './Pages/Return/Return';
+import User from './Pages/User/User';
+import RevLog from './Pages/RevLog/RevLog';
+import Product from './Pages/Product/Product';
+import Invoice from './Pages/Invoice/Invoice';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons';

@@ -3,23 +3,6 @@ import Select from 'react-select';
 
 import * as styles from './Selector.module.css';
 
-const optionsZone = [
-  { value: 'all', label: 'All' },
-  { value: 'north', label: 'North' },
-  { value: 'south', label: 'South' },
-  { value: 'east', label: 'East' },
-  { value: 'west', label: 'West' }
-]
-
-const optionsPriority = [
-  { value: 'all', label: 'All' },
-  { value: 'p3', label: 'P3' },
-  { value: 'p2', label: 'P2' },
-  { value: 'p1', label: 'P1' },
-]
-
-
-
 class Selector extends React.Component {
     state = {
         selectedOption: null,

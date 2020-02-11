@@ -1,0 +1,23 @@
+.importButton {
+    width: 10rem;
+    align-self: center;
+    background: #FA6332;
+    border: none;
+    color : white;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    border-radius: 5px;
+    transition: all .3s ease-in;
+    margin-left: 90rem;
+}
+
+.importButton:hover {
+    background-color: white;
+    color: #FA6332;
+    box-shadow: 0 0 10px #FA6332;
+}
+
+.importButton:active,
+.importButton:focus {
+    outline: none;
+}

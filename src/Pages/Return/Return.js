@@ -1,8 +1,8 @@
 import React from 'react';
 
-import NavBar from '../Navbar/Navbar';
-import Header from '../Header/Header';
-import Card from '../Card/card';
+import NavBar from '../../Components/Navbar/Navbar';
+import Header from '../../Components/Header/Header';
+import Card from '../../Components/Card/card';
 
 class Return extends React.Component {
     render() {

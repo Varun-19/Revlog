@@ -6,12 +6,14 @@ import * as serviceWorker from './serviceWorker';
 
 import loginReducer from './Store/Reducers/Login';
 import headerReducer from './Store/Reducers/Header';
+import importReducer from './Store/Reducers/Import';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
     login : loginReducer,
-    header : headerReducer
+    header : headerReducer,
+    importReducer : importReducer
 })
 const store = createStore(rootReducer)
 

@@ -2,7 +2,7 @@
         position: relative;
         bottom: 0;
         width: 12rem;
-        height: 100%;
+        height: 100vh;
         z-index: 1;
         background: #FA6332;
         transition: all 700ms;       

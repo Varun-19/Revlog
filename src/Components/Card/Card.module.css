@@ -2,7 +2,7 @@
     display: flex;
     overflow: hidden;
     position: relative;
-    width: 80%;
+    width: 90%;
     margin-left: 5rem;
     flex-direction: column;
 }
@@ -36,7 +36,7 @@
 }
    
 .internal{
-    width: 30rem;
+    width: 35rem;
     height: 90%;
     border-radius: 5px;
     box-shadow: 0 0 10px #00000029;

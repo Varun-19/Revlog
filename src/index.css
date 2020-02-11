@@ -29,10 +29,12 @@ code {
 
 section {
   display: flex;
-  background: linear-gradient(to bottom,#272262 20%,white 20%);
+  width: 100%;
 }
 
 .component {
   display: flex;
   flex-direction: column;
+  background: linear-gradient(to bottom,#272262 20%,white 20%);
+  width: 100%;
 }

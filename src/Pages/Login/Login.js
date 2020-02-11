@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import * as action from '../../Store/Actions/Login';
 import * as styles from './Login.module.css';
 import logo from '../../assets/logo/Logo.svg'
-import Input from '../Input/Input';
+import Input from '../../Components/Input/Input'
 
 class Login extends React.Component {  
     formHandler = (e) => {

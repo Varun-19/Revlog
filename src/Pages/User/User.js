@@ -1,9 +1,8 @@
 import React from 'react';
 
-import Navbar from '../Navbar/Navbar';
-import { Route } from 'react-router-dom';
-import Header from '../Header/Header';
-import Card from '../Card/card';
+import Navbar from '../../Components/Navbar/Navbar';
+import Header from '../../Components/Header/Header';
+import Card from '../../Components/Card/card';
 
 class User extends React.Component {
     render() {
