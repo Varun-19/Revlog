@@ -84,15 +84,6 @@ class Upload extends Component {
       return (
         <div className={styles.ProgressWrapper}>
           <Progress progress={uploadProgress ? uploadProgress.percentage : 0} />
-          <img
-            className={styles.CheckIcon}
-            alt="done"
-            src={cloud}
-            style={{
-              opacity:
-                uploadProgress && uploadProgress.state === "done" ? 0.5 : 0
-            }}
-          />
         </div>
       );
     }
@@ -128,7 +119,7 @@ class Upload extends Component {
             Clear
           </button>
           <button className={styles.button}
-            disabled={this.state.files.length < 0 || this.state.uploading}
+            disabled={this.state.files.length <= 0 || this.state.uploading}
             onClick={this.uploadFiles}
           >
           Upload

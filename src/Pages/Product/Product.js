@@ -6,6 +6,7 @@ import Header from '../../Components/Header/Header';
 import Card from '../../Components/Card/card';
 import Modal from '../../Components/Modal/Modal';
 import ImportButton from '../../Components/Import/Import';
+import Table from '../../Components/Table/Table';
 
 class Product extends React.Component {
     render() {
@@ -16,9 +17,9 @@ class Product extends React.Component {
             <div className='component'>
                 <Header title='Products' />
                 <Card title='product'/>  
-                <ImportButton />                  
+                <ImportButton />  
+                <Table />              
             </div>
-            
         </section>
         )
     }

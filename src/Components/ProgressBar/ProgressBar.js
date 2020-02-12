@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./ProgressBar.module.css";
+import styles from "./ProgressBar.module.css";
 
 class Progress extends Component {
   constructor(props) {
@@ -8,9 +8,9 @@ class Progress extends Component {
   }
   render() {
     return (
-      <div className="ProgressBar">
+      <div className={styles.ProgressBar}>
         <div
-          className="Progress"
+          className={styles.Progress}
           style={{ width: this.props.progress + "%" }}
         />
       </div>

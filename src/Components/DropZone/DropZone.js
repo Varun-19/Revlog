@@ -59,10 +59,9 @@ class Dropzone extends Component {
   }
 
   render() {
-    const mainClass = `Dropzone ${this.state.hightlight ? "Highlight" : ""}`
     return (
       <div
-        className={mainClass}
+        className={Dropzone + ' ' + `${this.state.hightlight ? "Highlight" : ""}`}
         onDragOver={this.onDragOver}
         onDragLeave={this.onDragLeave}
         onDrop={this.onDrop}
@@ -83,7 +82,7 @@ class Dropzone extends Component {
           src={upload}
         />
         </div>
-        <span className={styles.span}>Drop Your Files</span>
+        <span className={styles.span}>Browse Files</span>
       </div>
     );
   }
