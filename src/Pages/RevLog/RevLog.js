@@ -9,7 +9,9 @@ class RevLog extends React.Component {
         return (
             <section>
                 <Navbar/>
-                <Header title="RevLog" />
+                <div className='component'>
+                    <Header title="RevLog" />
+                </div>
             </section>
         )
     }
