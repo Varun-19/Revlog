@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 
 import * as styles from './Product.module.css' 
 import NavBar from '../../Components/Navbar/Navbar';
@@ -9,9 +11,15 @@ import ImportButton from '../../Components/Import/Import';
 import Table from '../../Components/Table/Table';
 
 class Product extends React.Component {
+
+    userLoggedIn = () => {
+        if(this.props.login.auth.authRedirectPath !== '/') return true;
+    }
+
     render() {
         return(
         <section>
+            {this.userLoggedIn ? null : <Redirect to={this.props.login.auth.authRedirectPath}/>}
             <Modal />
             <NavBar />
             <div className='component'>
@@ -25,4 +33,10 @@ class Product extends React.Component {
     }
 }
 
-export default Product;
+const mapStateToProps = state => {
+    return {
+        login : state.login
+    }
+}
+
+export default connect(mapStateToProps)(Product);

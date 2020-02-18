@@ -72,9 +72,12 @@ class Upload extends Component {
 
       const formData = new FormData();
       formData.append("file", file, file.name);
-
-      req.open("POST", 'https://testformdata.free.beeceptor.com')
+      
+      req.open("POST", 'http://localhost:5000/api/v1/upload');
+      req.setRequestHeader('Authorization', localStorage.getItem('token'));
       req.send(formData);
+
+      
     });
   }
 

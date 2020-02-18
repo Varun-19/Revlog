@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 
 import NavBar from '../../Components/Navbar/Navbar';
 import Header from '../../Components/Header/Header';
@@ -8,16 +10,22 @@ import ImportButton from '../../Components/Import/Import';
 import Table from '../../Components/Table/Table';
 
 class Return extends React.Component {
+
+    userLoggedIn = () => {
+        if(this.props.login.auth.authRedirectPath !== '/') return true;
+    }
+
     render() {
         return(
             <section>
+                {this.userLoggedIn ? null : <Redirect to={this.props.login.auth.authRedirectPath}/>}
                 <Modal />
                 <NavBar/>
                 <div className='component'>
                     <Header title="Returns" />
                     <Card page='returns'/>
                     <ImportButton />  
-                    <Table /> 
+                    <Table page='returns'/> 
                 </div>
             </section>
 
@@ -25,4 +33,10 @@ class Return extends React.Component {
     }
 }
 
-export default Return;
+const mapStateToProps = state => {
+    return {
+        login : state.login
+    }
+}
+
+export default connect(mapStateToProps)(Return);

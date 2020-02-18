@@ -8,14 +8,18 @@ import loginReducer from './Store/Reducers/Login';
 import headerReducer from './Store/Reducers/Header';
 import importReducer from './Store/Reducers/Import';
 import { Provider } from 'react-redux';
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
 
 const rootReducer = combineReducers({
     login : loginReducer,
     header : headerReducer,
     importReducer : importReducer
 })
-const store = createStore(rootReducer)
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 

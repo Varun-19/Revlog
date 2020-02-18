@@ -7,7 +7,9 @@ class ImportButton extends React.Component {
 
     render(){
         return(
-            <button className={styles.importButton} onClick={this.props.click}>Import</button>
+            <div className={styles.importButtonContainer}>
+                <button className={styles.importButton} onClick={this.props.click}>Import</button>
+            </div>
         )
     }
 }
