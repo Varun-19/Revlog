@@ -1,9 +1,12 @@
 import React from 'react';
+import { Redirect } from "react-router-dom";
+import history from '../History/History';
 import Input from '../Input/Input';
 
+import Modal from '../Modal/Modal';
+import AddReturns from '../../Pages/AddReturns/AddReturns';
 import styles from './Table.module.css';
-import edit from '../../assets/icons/edit.svg';
-import deleteIcon from '../../assets/icons/delete.svg';
+import edit from '../../assets/icons/eye.svg';
 import ReactPaginate from 'react-paginate';
 
 class Tabledata extends React.Component {
@@ -15,7 +18,6 @@ class Tabledata extends React.Component {
                     <th scope="row">
                         <div>
                             <button className={styles.buttonIcon}><img src={edit} alt='edit'/></button>
-                            <button className={styles.buttonIcon}><img src={deleteIcon} alt='delete'/></button>
                         </div>
                     </th>
                     <td>Table cell</td>
@@ -31,7 +33,12 @@ class Tabledata extends React.Component {
         return res;
     }
 
+    addReturns = () => {
+        history.push('/returns/addreturns');
+    }
+
     render() {
+
         return(
             <div>
             <table>
@@ -48,7 +55,7 @@ class Tabledata extends React.Component {
                 </thead>
                 <tbody>
                     <tr>
-                    <th scope="row"><button className={styles.button}>+</button></th>
+                    <th scope="row"><button className={styles.button} onClick={this.addReturns}>+</button></th>
                     <td><Input className={styles.input}/></td>
                     <td><Input/></td>
                     <td><Input/></td>

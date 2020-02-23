@@ -17,7 +17,7 @@ class modal extends React.Component {
                         transform: this.props.import.show ? 'translateY(0)' : 'translateY(-100vh)',
                         opacity: this.props.import.show ? '1' : '0'
                     }}>
-                    <Uploader />
+                    {this.props.children}
                 </div>
             </React.Fragment>
         )

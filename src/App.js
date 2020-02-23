@@ -6,6 +6,7 @@ import User from './Pages/User/User';
 import RevLog from './Pages/RevLog/RevLog';
 import Product from './Pages/Product/Product';
 import Invoice from './Pages/Invoice/Invoice';
+import AddReturns from './Pages/AddReturns/AddReturns';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons';

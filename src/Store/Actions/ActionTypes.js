@@ -7,6 +7,9 @@ const authSuccess = 'authSuccess';
 const authFail = 'authFail';
 const authLogout = 'authLogout';
 const setAuthRedirect = 'setAuthRedirect';
+const addReturns = 'addRetuns';
+const addInvoice = 'addInvoice';
+const addProduct = 'addPoduct';
 
 export {
     onChange,
@@ -17,5 +20,8 @@ export {
     authSuccess,
     authFail,
     authLogout,
-    setAuthRedirect
+    setAuthRedirect,
+    addReturns,
+    addInvoice,
+    addProduct
 }

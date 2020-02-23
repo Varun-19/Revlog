@@ -1,0 +1,104 @@
+.addReturnsContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.addReturns {
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.addReturns header {
+    display: flex;
+    padding: 1.5rem 7.5rem;
+    border-bottom: 1px solid #707070;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addReturns header h3 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.addReturns header button {
+    border : 2px solid #FA6332;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    transition: .3s all ease;
+    font-size: 1.3rem;
+}
+
+.buttonClose {
+    background-color: white;
+    color: #FA6332;
+    margin-right: 2rem;
+}
+
+.buttonNext {
+    color: white;
+    background-color: #FA6332;
+}
+
+.buttonNext:hover,
+.buttonClose:hover {
+    transform: scale(1.1);
+}
+
+.buttonNext:active,
+.buttonNext:focus,
+.buttonClose:active,
+.buttonClose:focus {
+    outline: none
+}
+
+.dealers {
+    display: flex;
+    padding: 1.5rem;
+    align-items: flex-start;
+    padding-left: 15%;
+    border-bottom: 1px solid #707070;
+}
+
+.dealers input {
+    margin-right: 3rem;
+    width: 20rem;
+    height: 4rem;
+    margin-bottom: 0;
+}
+
+.invoiceContainer {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    padding-left: 5%;
+}
+
+.invoiceContainer button {
+    width: 4rem;
+    height: 4rem;
+    background-color: #FA6332;
+    color : white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 3rem;
+}
+
+.invoiceContainer input {
+    margin-bottom: 0;
+    height: 4rem;
+    width: 20rem;
+}

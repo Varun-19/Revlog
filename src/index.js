@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import loginReducer from './Store/Reducers/Login';
 import headerReducer from './Store/Reducers/Header';
 import importReducer from './Store/Reducers/Import';
+import addReturnsReducer from './Store/Reducers/AddReturns';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
@@ -14,7 +15,8 @@ import thunk from 'redux-thunk';
 const rootReducer = combineReducers({
     login : loginReducer,
     header : headerReducer,
-    importReducer : importReducer
+    importReducer : importReducer,
+    addReturns : addReturnsReducer
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

@@ -6,6 +6,7 @@ import NavBar from '../../Components/Navbar/Navbar';
 import Header from '../../Components/Header/Header';
 import Card from '../../Components/Card/card';
 import ImportButton from '../../Components/Import/Import';
+import Uploader from '../../Components/Uploader/Uploader';
 import Modal from '../../Components/Modal/Modal';
 import Table from '../../Components/Table/Table';
 
@@ -19,7 +20,9 @@ class Invoice extends React.Component {
         return(
             <section>
                 {this.userLoggedIn ? null : <Redirect to={this.props.login.auth.authRedirectPath}/>}
-                <Modal />
+                <Modal>
+                    <Uploader />
+                </Modal>
                 <NavBar/>
                 <div className='component'>
                     <Header title="Invoice" />

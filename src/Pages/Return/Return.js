@@ -1,13 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Route } from 'react-router-dom';
 
+import AddReturns from '../AddReturns/AddReturns';
 import NavBar from '../../Components/Navbar/Navbar';
 import Header from '../../Components/Header/Header';
 import Card from '../../Components/Card/card';
 import Modal from '../../Components/Modal/Modal';
 import ImportButton from '../../Components/Import/Import';
 import Table from '../../Components/Table/Table';
+import Uploader from '../../Components/Uploader/Uploader';
 
 class Return extends React.Component {
 
@@ -19,7 +21,9 @@ class Return extends React.Component {
         return(
             <section>
                 {this.userLoggedIn ? null : <Redirect to={this.props.login.auth.authRedirectPath}/>}
-                <Modal />
+                <Modal>
+                    <Uploader />
+                </Modal>
                 <NavBar/>
                 <div className='component'>
                     <Header title="Returns" />
@@ -27,6 +31,7 @@ class Return extends React.Component {
                     <ImportButton />  
                     <Table page='returns'/> 
                 </div>
+                <Route path='/returns/addreturns' component={AddReturns}/>
             </section>
 
         )
