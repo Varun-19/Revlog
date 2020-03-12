@@ -1,35 +1,38 @@
 .Upload {
     display: flex;
+    height: 100%;
     flex-direction: column;
-    flex: 1;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-around;
     text-align: left;
     overflow: hidden;
   }
   
   .Content {
     display: flex;
-    flex-direction: row;
-    padding-top: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem;
     box-sizing: border-box;
-    width: 100%;
+    width: 50%;
   }
   
   .Files {
-    margin-left: 32px;
-    align-items: flex-start;
-    justify-items: flex-start;
+    width: 40rem;
+    margin-left: 1.2rem;
+    margin-top: .5rem;
+    align-items: center;
+    justify-content: center;
     flex: 1;
     overflow-y: auto;
   }
   
   .Actions {
     display: flex;
-    flex: 1;
     width: 100%;
     justify-content: center;
     flex-direction: row;
-    margin-top: 32px;
   }
   
   .Actions button {
@@ -43,18 +46,19 @@
   }
   
   .Filename {
-    margin-bottom: 8px;
-    font-size: 16px;
+    width:20rem;
+    font-size: 1.5rem;
     color: #555;
   }
   
   .Row {
     display: flex;
     flex: 1;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    height: 50px;
-    padding: 8px;
+    align-items: center;
+    height: 5rem;
+    padding-top: .5rem;
     overflow: hidden;
     box-sizing: border-box;
   }

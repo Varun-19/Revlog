@@ -1,7 +1,6 @@
 .card {
     display: flex;
     overflow: hidden;
-    position: relative;
     width: 90%;
     margin-left: 5rem;
     flex-direction: column;
@@ -12,12 +11,12 @@
 }
 
 .left {
-    position: fixed; 
+    position: absolute; 
     top : 3rem;
     right: 7.5rem;
 }
 .right{
-    position: fixed; 
+    position: absolute; 
     top : 3rem;
     right: 2.5rem;
    }

@@ -1,6 +1,6 @@
 .Dropzone {
-    height: 300px;
-    width: 300px;
+    height: 20rem;
+    width: 20rem;
     background-color: #fff;
     border: 2px dashed rgb(187, 186, 186);
     border-radius: 50%;
@@ -22,9 +22,8 @@
 }
 
   .Highlight {
-    background-color: rgb(188, 185, 236);
+    background-color: rgba(250,99,50,.7);
   }
-  
   .Icon {
     width: 5rem;
     height: auto;

@@ -15,7 +15,7 @@ class modal extends React.Component {
                     className={styles.Modal}
                     style={{
                         transform: this.props.import.show ? 'translateY(0)' : 'translateY(-100vh)',
-                        opacity: this.props.import.show ? '1' : '0'
+                        opacity: this.props.import.show ? '1' : '0',
                     }}>
                     {this.props.children}
                 </div>

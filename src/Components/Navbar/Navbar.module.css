@@ -9,12 +9,6 @@
     transition: all 700ms;             
 }
 
-.clearfix::after {
-    content: ' ';
-    display: table;
-    clear: both;
-}
-
 .display {
     display: none;
     font-size: 1.6rem;
@@ -37,29 +31,19 @@
     align-items: flex-start;
 } 
 
-.nav:before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    z-index: 1;
-    transition: all 400ms;
-}
-
 .logo {
     padding: 2rem 2rem 1rem 2rem;
     text-align: center;
     margin-left: 2.3rem;
 }
 
-.nav .rev {
+.nav .revContainer {
     margin-top: 1rem;
     font-size: 2.5rem;
     padding: .5rem 2rem;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
+    z-index:100; 
 }
 
 .nav li {

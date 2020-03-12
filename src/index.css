@@ -33,6 +33,13 @@ section {
   width: 100%;
 }
 
+h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin: 2rem;
+}
 
 .component {
   display: flex;

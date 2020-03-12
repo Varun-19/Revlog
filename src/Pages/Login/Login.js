@@ -12,7 +12,9 @@ class Login extends React.Component {
     formHandler = (e) => {
         e.preventDefault();
         e.persist();
-        this.props.onAuth( this.props.login.formElements.userName.value, this.props.login.formElements.password.value);
+        // this.props.onAuth( this.props.login.formElements.userName.value, this.props.login.formElements.password.value);
+        const {history} = this.props;
+        history.push('/products');
     }  
 
     render() {

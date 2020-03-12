@@ -7,7 +7,6 @@ import Navbar from '../../Components/Navbar/Navbar';
 import Header from '../../Components/Header/Header';
 
 class RevLog extends React.Component {
-
     userLoggedIn = () => {
         if(this.props.login.auth.authRedirectPath !== '/') return true;
     }
@@ -15,9 +14,9 @@ class RevLog extends React.Component {
     render() {
         return (
             <section>
-                {this.userLoggedIn ? null : <Redirect to={this.props.login.auth.authRedirectPath}/>}
+                {/* {this.userLoggedIn ? null : <Redirect to={this.props.login.auth.authRedirectPath}/>} */}
                 <Navbar/>
-                <div className='component'>
+                <div className={'component'}>
                     <Header title="RevLog" />
                 </div>
             </section>

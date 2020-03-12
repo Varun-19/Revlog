@@ -19,7 +19,7 @@ class Invoice extends React.Component {
 
         return(
             <section>
-                {this.userLoggedIn ? null : <Redirect to={this.props.login.auth.authRedirectPath}/>}
+                {/* {this.userLoggedIn ? null : <Redirect to={this.props.login.auth.authRedirectPath}/>} */}
                 <Modal>
                     <Uploader />
                 </Modal>

@@ -60,30 +60,29 @@ class Dropzone extends Component {
 
   render() {
     return (
-      <div
-        className={Dropzone + ' ' + `${this.state.hightlight ? "Highlight" : ""}`}
-        onDragOver={this.onDragOver}
-        onDragLeave={this.onDragLeave}
-        onDrop={this.onDrop}
-        onClick={this.openFileDialog}
-        style={{ cursor: this.props.disabled ? "default" : "pointer" }}
-      >
-        <input
-          ref={this.fileInputRef}
-          className={styles.FileInput}
-          type="file"
-          multiple
-          onChange={this.onFilesAdded}
-        />
-        <div className={styles.circle}>
-        <img
-          alt="upload"
-          className={styles.Icon}
-          src={upload}
-        />
+        <div
+          className={styles.Dropzone + ' ' + `${this.state.hightlight ? styles.Highlight : ""}`}
+          onDragOver={this.onDragOver}
+          onDragLeave={this.onDragLeave}
+          onDrop={this.onDrop}
+          onClick={this.openFileDialog}
+          style={{ cursor: this.props.disabled ? "default" : "pointer" }}
+        >
+          <input
+            ref={this.fileInputRef}
+            className={styles.FileInput}
+            type="file"
+            multiple
+            onChange={this.onFilesAdded}
+          />
+          <div className={styles.circle}>
+          <img
+            alt="upload"
+            className={styles.Icon}
+            src={upload}
+          />
+          </div>
         </div>
-        <span className={styles.span}>Browse Files</span>
-      </div>
     );
   }
 }

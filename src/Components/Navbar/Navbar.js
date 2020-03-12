@@ -6,7 +6,7 @@ import returnIcon from '../../assets/icons/return.svg';
 import trolleyIcon from '../../assets/icons/trolley.svg';
 import teamIcon from '../../assets/icons/team.svg';
 import invoiceIcon from '../../assets/icons/invoice.svg';
-import * as styles from './Navbar.module.css';
+import styles from './Navbar.module.css';
 
 const navBar = () => {
     const headerStyle = `${styles.mainHeader} ${styles.clearfix}`
@@ -18,11 +18,11 @@ const navBar = () => {
                 </div>
                 <ul>
                     <li>
-                        <div className={styles.revContainer}>
-                            <NavLink to='/revlog'>
-                                <span className={styles.rev}>RL</span>
-                            </NavLink>
-                        </div>
+                        <NavLink to='/revlog'>
+                            <div className={styles.revContainer}>
+                                RL
+                            </div>
+                        </NavLink>
                     </li>
                     <li>
                         <NavLink to='/returns' activeClassName={styles.active}>

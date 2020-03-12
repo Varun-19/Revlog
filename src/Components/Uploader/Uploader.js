@@ -95,6 +95,9 @@ class Upload extends Component {
   render() {
     return (
       <div className={styles.Upload}>
+      <h4>
+        Import your invoice 
+      </h4>
         <div className={styles.Content}>
           <div>
             <Dropzone

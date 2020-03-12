@@ -19,7 +19,7 @@ class Product extends React.Component {
     render() {
         return(
         <section>
-            {this.userLoggedIn ? null : <Redirect to={this.props.login.auth.authRedirectPath}/>}
+            {/* {this.userLoggedIn ? null : <Redirect to={this.props.login.auth.authRedirectPath}/>} */}
             <Modal />
             <NavBar />
             <div className='component'>

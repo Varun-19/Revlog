@@ -18,7 +18,7 @@ class User extends React.Component {
     render() {
         return(
             <section>
-                {this.userLoggedIn ? null : <Redirect to={this.props.login.auth.authRedirectPath}/>}
+                {/* {this.userLoggedIn ? null : <Redirect to={this.props.login.auth.authRedirectPath}/>} */}
                 <Modal />
                 <Navbar />
                 <div className='component'>
