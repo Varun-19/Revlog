@@ -26,6 +26,12 @@ class Tabledata extends React.Component {
                     <td>Table cell</td>
                     <td>Table cell</td>
                     <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
+                    <td>Table cell</td>
                     </tr>)
                  
         }
@@ -51,12 +57,24 @@ class Tabledata extends React.Component {
                     <th>Table heading</th>
                     <th>Table heading</th>
                     <th>Table heading</th>
+                    <th>Table heading</th>
+                    <th>Table heading</th>
+                    <th>Table heading</th>
+                    <th>Table heading</th>
+                    <th>Table heading</th>
+                    <th>Table heading</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                     <th scope="row"><button className={styles.button} onClick={this.addReturns}>+</button></th>
                     <td><Input className={styles.input}/></td>
+                    <td><Input/></td>
+                    <td><Input/></td>
+                    <td><Input/></td>
+                    <td><Input/></td>
+                    <td><Input/></td>
+                    <td><Input/></td>
                     <td><Input/></td>
                     <td><Input/></td>
                     <td><Input/></td>

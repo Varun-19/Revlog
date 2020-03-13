@@ -22,12 +22,13 @@ class Header extends React.Component {
                 <div className={styles.title}>
                     <h3>{this.props.title}</h3>
                 </div>
-                {headerObjectArray.map( el => {
-                    return(
-                        <Selector key={el.id} id={el.id} options={el.config.options}/>
-                    )
-                })}
-                
+                <div className={styles.headerselector}>
+                    {headerObjectArray.map( el => {
+                        return(
+                            <Selector key={el.id} id={el.id} options={el.config.options}/>
+                        )
+                    })}
+                </div>
             </div>
         )
     }

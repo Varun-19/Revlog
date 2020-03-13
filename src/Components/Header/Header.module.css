@@ -4,10 +4,30 @@
 
 .headerTop h3 {
     margin: 2.5rem;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .title {
     width: 15rem;
+}
+
+.headerselector {
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    .headerTop {
+        flex-direction: column; 
+    }  
+
+    .headerTop h3{
+        margin : 2.5rem 2.5rem 0 5rem ;  
+    }
+    .headerselector {
+        margin : 0 2.5rem;
+    }
+    
 }

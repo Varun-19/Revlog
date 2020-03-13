@@ -1,9 +1,9 @@
 .mainHeader {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 12rem;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
     background: #FA6332;
     transition: all 700ms;             
@@ -83,3 +83,8 @@
     z-index:100; 
 }
 
+@media screen and (max-width:968px) {
+    .mainHeader {
+        display: none;
+    }
+}

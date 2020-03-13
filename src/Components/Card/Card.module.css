@@ -1,8 +1,9 @@
 .card {
     display: flex;
-    overflow: hidden;
+    overflow: visible;
     width: 90%;
-    margin-left: 5rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
     flex-direction: column;
 }
 
@@ -113,4 +114,15 @@
 
 .colorGreen {
     box-shadow: 0 0 2rem #19CE10;
+}
+
+@media screen and (max-width:1024px) {
+    .internal {
+        width: 30rem;
+        height: 80%;
+    }
+    .circle {
+        height: 7rem;
+        width: 7rem;
+    }
 }
